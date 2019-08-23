@@ -7,3 +7,6 @@
 
 // hint 1: array.filter is your friend
 // hint 2: document.querySelectorAll('selector1, selector2') will get you all nodes that match either selector
+const nodes = Array.from(document.querySelectorAll('div,h1'));
+const names = nodes.filter(item => item.id.toLocaleLowerCase().startsWith('name'));
+console.log(names);
